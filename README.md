@@ -88,13 +88,13 @@ While the portfolio homepage will build, but the subpages will not. They serve f
 
 ## Contributing
 
-I'm always happy to receive pull requests, questions/issues regarding code, and feature requests on all my projects. Please feel free to open an issue or submit a pull request.
+I'm always happy to receive pull requests, questions/issues regarding code, and feature requests on all my projects, even my portfolio! Please feel free to open an issue or submit a pull request.
 
 **[Back to top](#table-of-contents)**
 
 ## Authors
 
-* **[Sam Messina](https://www.github.com/regexpressyourself)** - *Sole Developer* 
+* **[Sam Messina](https://www.github.com/regexpressyourself)** - *Sole Developer and Subject* 
 
 **[Back to top](#table-of-contents)**
 
