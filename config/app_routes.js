@@ -1,7 +1,14 @@
+/*
+ * This is really where the magic happens.
+ * Static asset routes can be declared based on the url request. 
+ * This way, we can point to build directories in sub-projects 
+ * easily.
+ */
+
 const path = require('path');
 const express = require('express');
 
-// Primary app routes
+// Primary app routes - all the pages to render directly
 const home          = path.join(__dirname, '../public/index.html');
 const q             = path.join(__dirname, '../projects/Q-Programming-Language/index.html');
 const nabbar        = path.join(__dirname, '../projects/Nabbar-Nav/example_create-react-app/build/index.html');
@@ -11,16 +18,31 @@ const gitflow       = path.join(__dirname, '../projects/gitflow/index.html');
 const tpup          = path.join(__dirname, '../projects/Turbo-Pup-Site/index.html');
 
 module.exports = (app) => {
+
+  // declare home route
   app.get('/', (req, res) => {
+
+    // set up static asset routing
     app.use( '/', express.static('public'));
     app.use( '/images', express.static('public/images'));
+
+    // send the index.html file declared above.
     res.sendFile(home);
   });
+
+  // declare a route for Git Flow
   app.get('/gitflow', (req, res) => {
+
+    // set up assets
     app.use( '/', express.static('projects/gitflow'));
     app.use( '/gitflow', express.static('projects/gitflow'));
+
+    // send the index file
     res.sendFile(gitflow);
   });
+
+  // do the same for the other projects...
+
   app.get('/practicebuddy', (req, res) => {
     app.use( '/practicebuddy', express.static('projects/PracticeBuddy/build'));
     app.use( '/static', express.static('projects/PracticeBuddy/build/static'));
