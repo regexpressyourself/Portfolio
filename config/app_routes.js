@@ -36,10 +36,12 @@ module.exports = (app) => {
   });
   app.get('/Q-Programming-Language', (req, res) => {
     app.use( '/Q-Programming-Language', express.static('projects/Q-Programming-Language'));
+    app.use( '/reveal.js', express.static('projects/Q-Programming-Language/reveal.js'));
     res.sendFile(q);
   });
   app.get('/Turbo-Pup-Site', (req, res) => {
     app.use( '/Turbo-Pup-Site', express.static('projects/Turbo-Pup-Site'));
+    app.use( '/', express.static('projects/Turbo-Pup-Site'));
     res.sendFile(tpup);
   });
 };
