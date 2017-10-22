@@ -35,6 +35,7 @@ h2 + span{
   margin-left: 12%;
 }
 h1 {
+  line-height: 75%;
   padding: 5% 3%;
   position: relative;
   color: white;
