@@ -1,5 +1,7 @@
 # Sam Messina's Portfolio
 
+<img src="https://smessina.com/images/sm_fav.png" align="right" />
+
 _*New and improved!*_
 
 My new portfolio is a general-purpose Node server. Static assets can be rendered off of dynamic routes, making it perfect for hosting different apps and projects I'm working on.
