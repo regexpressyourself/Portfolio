@@ -1,11 +1,14 @@
 {
   "name": "sam-messina-portfolio",
-  "version": "3.0",
-  "description": "Sam Messina Web Portfolio",
-  "author": "Sam Messina",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Sam Messina's portfolio and Node server",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/regexpressyourself/portfolio.git"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -19,11 +22,11 @@
     "lusca": "^1.5.2",
     "path": "^0.12.7"
   },
-    "env": {
-      "node": true
-    },
-    "plugins": [
-      "chai-friendly"
-    ]
-  }
+  "keywords": [
+    "node",
+    "express",
+    "javascript"
+  ],
+  "author": "Sam Messina",
+  "license": "MIT"
 }
