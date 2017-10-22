@@ -12,14 +12,17 @@ const tpup = path.join(__dirname, '../projects/Turbo-Pup-Site/index.html');
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
+    app.use( '/', express.static('public'));
     res.sendFile(home);
   });
   app.get('/gitflow', (req, res) => {
+    app.use( '/', express.static('projects/gitflow'));
     app.use( '/gitflow', express.static('projects/gitflow'));
     res.sendFile(gitflow);
   });
   app.get('/practicebuddy', (req, res) => {
     app.use( '/practicebuddy', express.static('projects/PracticeBuddy/build'));
+    app.use( '/static', express.static('projects/PracticeBuddy/build/static'));
     res.sendFile(practicebuddy);
   });
   app.get('/iframer', (req, res) => {

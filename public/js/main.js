@@ -1,11 +1,11 @@
 const project_list = [
   {
     title:       "Practice Buddy",
-    description: "<em><b>Practice Buddy is still in active development.</em></b><br/><br/>Practice Buddy is a tool to help guitarists and bassists practice modes, chords, and songs. It is written as a single page app in ReactJS and uses the newest version of React Router to serve routes.",
+    description: "<em><b>Practice Buddy is still in active development.</em></b><br/><br/>Practice Buddy is a tool to help guitarists and bassists practice modes, chords, and songs. It is written as a single page app in React and uses the newest version of React Router to serve routes.",
     imageSrc:    "images/practicebuddy_logo.png",
     projectLink: "https://smessina.com/practicebuddy/",
     githubLink:  "https://github.com/regexpressyourself/PracticeBuddy",
-    techList:    ["ReactJS", "JavaScript", "HTML", "CSS"],
+    techList:    ["React", "JavaScript", "Webpack", "HTML", "CSS", "CSS Grid"],
     background:  "background-color:  #F3EFD7"
   },
   {
@@ -14,7 +14,7 @@ const project_list = [
     imageSrc:    "images/passmanlogo.png",
     projectLink: "https://pypi.python.org/pypi/passman",
     githubLink:  "https://www.github.com/regexpressyourself/passman",
-    techList:    ["Python", "MongoDB"],
+    techList:    ["Python", "Pip", "JSON", "SHA512 Encryption", "REST", "MongoDB"],
     background:  "background-color: #70C1B3"
   },
   {
@@ -23,7 +23,7 @@ const project_list = [
     imageSrc:    "images/GitFlowLogo.png",
     projectLink: "/gitflow",
     githubLink:  "https://www.github.com/regexpressyourself/gitflow",
-    techList:    ["ReactJS", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    techList:    ["React", "React Router v. 3", "JavaScript", "ES6", "HTML", "CSS", "SCSS", "Bootstrap"],
     background:  "background-color: #f9f2f4"
   },
   {
@@ -32,7 +32,7 @@ const project_list = [
     imageSrc:    "images/ohlogo.png",
     projectLink: "http://orderuphookup.com",
     githubLink:  "https://www.github.com/regexpressyourself/OrderUp-HookUp",
-    techList:    ["JavaScript", "NodeJS", "Angular 1", "HTML", "CSS", "Bootstrap"],
+    techList:    ["JavaScript", "Node", "Express", "Angular 1", "HTML", "CSS", "Bootstrap"],
     background:  "background-color: #E6FAED"
   },
   {
