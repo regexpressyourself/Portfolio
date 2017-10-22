@@ -2,7 +2,7 @@
 
 _*New and improved!*_
 
-My new portfolio is a general-purpose node server. Static assets can be rendered off of dynamic routes, making it perfect for hosting different apps and projects I'm working on.
+My new portfolio is a general-purpose Node server. Static assets can be rendered off of dynamic routes, making it perfect for hosting different apps and projects I'm working on.
 
 [See it live here!](https://www.smessina.com/)
 
@@ -27,7 +27,7 @@ The server itself is fairly straight forward Node and Express stuff, detailed be
 ### Prerequisites
 
 
-Make sure you have NodeJS and NPM installed. [You can download Node here](https://nodejs.org/en/download/). This will install NPM as well.
+Make sure you have Node and NPM installed. [You can download Node here](https://nodejs.org/en/download/). This will install NPM as well.
 
 You are welcome to use [Yarn](https://yarnpkg.com/en/) instead of NPM if you prefer.
 
