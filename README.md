@@ -57,9 +57,7 @@ Next, install the dependencies using NPM or Yarn.
 
 ## Deployment
 
-### Development Environment
-
-While the portfolio homepage will build fine, the subpages will not. They serve files from git submodules
+While the portfolio homepage will build, but the subpages will not. They serve files from git submodules. You can read how to update them on git's documentation [here](https://git-scm.com/docs/git-submodule).
 
 
 #### Using NPM
@@ -76,34 +74,15 @@ While the portfolio homepage will build fine, the subpages will not. They serve 
 
    That's it! Your development server is running at [http://localhost:8080](http://localhost:8080)
    
-   Webpack is configured with hot reloading, so any changes saved to source files will be immediately reflected in the browser.
-
-### Production Build
-
-To build a production version of the app, with all React code loaded into a bundled, minified Javascript file, you need to run the `production` script declared in package.json.
-
-#### Using NPM
-
-```
-   npm run production
-```
-
-#### Using Yarn
-
-```
-   yarn run production
-```
-
-   This will leave you with an `index.html` and an `index_bundle.js` file in the project root. Hosting these files from the same location will serve the production build of my portfolio.
 
 **[Back to top](#table-of-contents)**
 
 
 ## Built With
 
-* [React](https://facebook.github.io/react/) - The web framework that powers the site
-* [Webpack](https://webpack.github.io/) - A module builder automate development and production build processes
-* [Babel](https://babeljs.io/) - Transpiler to convert raw React code into browser-ready HTML and Javascript
+* [Node](https://nodejs.org/en/) - Can't express how excited I am to have Node on this server finally
+* [Express](https://expressjs.com/) - I have an unabashed exclusive relationship with Express routing
+* [Steam Shovel](https://www.facebook.com/SteamShovelCoffee/) - Couldn't have done it without it
 
 **[Back to top](#table-of-contents)**
 
