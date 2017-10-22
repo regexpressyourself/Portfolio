@@ -2,17 +2,18 @@ const path = require('path');
 const express = require('express');
 
 // Primary app routes
-const home = path.join(__dirname, '../public/index.html');
-const q = path.join(__dirname, '../projects/Q-Programming-Language/index.html');
-const nabbar = path.join(__dirname, '../projects/Nabbar-Nav/example_create-react-app/build/index.html');
+const home          = path.join(__dirname, '../public/index.html');
+const q             = path.join(__dirname, '../projects/Q-Programming-Language/index.html');
+const nabbar        = path.join(__dirname, '../projects/Nabbar-Nav/example_create-react-app/build/index.html');
 const practicebuddy = path.join(__dirname, '../projects/PracticeBuddy/build/index.html');
-const iframer = path.join(__dirname, '../projects/Iframer/index.html');
-const gitflow = path.join(__dirname, '../projects/gitflow/index.html');
-const tpup = path.join(__dirname, '../projects/Turbo-Pup-Site/index.html');
+const iframer       = path.join(__dirname, '../projects/Iframer/index.html');
+const gitflow       = path.join(__dirname, '../projects/gitflow/index.html');
+const tpup          = path.join(__dirname, '../projects/Turbo-Pup-Site/index.html');
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
     app.use( '/', express.static('public'));
+    app.use( '/images', express.static('public/images'));
     res.sendFile(home);
   });
   app.get('/gitflow', (req, res) => {

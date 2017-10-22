@@ -5,7 +5,7 @@ const project_list = [
     imageSrc:    "images/practicebuddy_logo.png",
     projectLink: "https://smessina.com/practicebuddy/",
     githubLink:  "https://github.com/regexpressyourself/PracticeBuddy",
-    techList:    ["React", "JavaScript", "Webpack", "HTML", "CSS", "CSS Grid"],
+    techList:    ["React", "JavaScript", "ES6", "Webpack", "HTML", "CSS", "CSS Grid"],
     background:  "background-color:  #F3EFD7"
   },
   {
@@ -32,7 +32,7 @@ const project_list = [
     imageSrc:    "images/ohlogo.png",
     projectLink: "http://orderuphookup.com",
     githubLink:  "https://www.github.com/regexpressyourself/OrderUp-HookUp",
-    techList:    ["JavaScript", "Node", "Express", "Angular 1", "HTML", "CSS", "Bootstrap"],
+    techList:    ["JavaScript", "Angular 1", "Node", "Express", "HTML", "CSS", "Bootstrap"],
     background:  "background-color: #E6FAED"
   },
   {
@@ -70,7 +70,7 @@ const project_list = [
     projectLink: "/Turbo-Pup-Site",
     githubLink:  "https://www.github.com/regexpressyourself/Turbo-Pup-Site",
     techList:    ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-    background:  'background-image: url("images/turbo-bg.png")'
+    background:  'background-image: url("images/turbo-bg.jpg")'
   }
 
 ];
@@ -122,29 +122,36 @@ let get_img = (img_src, background, project_link, gh_link) => {
     "<img alt='project logo'" +
     "src='"+img_src+"'/></div></a>"
 }
+let get_text_div = (current_proj) => {
+  let text_div = "<div class='project-text-container'>";
+  text_div += get_tech(current_proj.techList);
+  text_div += get_header(current_proj.title);
+  text_div += get_desc(current_proj.description);
+  text_div += get_links(current_proj.projectLink, 
+    current_proj.githubLink, 
+    current_proj.title);
+  text_div += "</div>";
+  return text_div;
+};
+let get_img_div= (current_proj) => {
+  let img_div = "<div class='project-image-container'>";
+  img_div += get_img(current_proj.imageSrc, 
+    current_proj.background, 
+    current_proj.projectLink,
+    current_proj.githubLink);
+  img_div += "</div>";
+  return img_div;
+};
 
 (function() {
   let project_html = "";
   for (let i = 0; i < project_list.length; i++) {
     let current_proj = project_list[i];
-
-    let text_div = "<div class='project-text-container'>";
-    text_div += get_tech(current_proj.techList);
-    text_div += get_header(current_proj.title);
-    text_div += get_desc(current_proj.description);
-    text_div += get_links(current_proj.projectLink, 
-      current_proj.githubLink, 
-      current_proj.title);
-    text_div += "</div>";
-
-    let img_div = "<div class='project-image-container'>";
-    img_div += get_img(current_proj.imageSrc, 
-      current_proj.background, 
-      current_proj.projectLink,
-      current_proj.githubLink);
-    img_div += "</div>";
+    let text_div     = get_text_div(current_proj);
+    let img_div      = get_img_div(current_proj);
 
     project_html += "<div class='project-item'>";
+
     if (i%2 == 0) {
       project_html += text_div;
       project_html += img_div;
@@ -153,7 +160,9 @@ let get_img = (img_src, background, project_link, gh_link) => {
       project_html += img_div;
       project_html += text_div;
     }
+
     project_html += "</div>";
+
   }
   document.getElementById("project-list").innerHTML = project_html;
   document.getElementById("cr-date").innerHTML = new Date().getFullYear();
