@@ -1,6 +1,6 @@
 # Sam Messina's Portfolio
 
-<img src="https://smessina.com/images/sm_fav.png" align="right" />
+<img width="400px" src="https://smessina.com/images/sm_fav.png" align="right" />
 
 _*New and improved!*_
 
