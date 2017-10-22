@@ -53,6 +53,9 @@ h2 {
   color: white;
   bottom: 10%;
 }
+header {
+  min-height: 50vw;
+}
 header, 
 #project-header,
 #project-subheader {
