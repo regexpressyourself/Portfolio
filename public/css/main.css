@@ -15,6 +15,7 @@ body {
   background-color: var(--bg);
   color: var(--dark);
   margin: 0;
+  min-height: 300%;
 }
 
 h1, h2 {
@@ -53,9 +54,6 @@ h2 {
   position: absolute;
   color: white;
   bottom: 10%;
-}
-header {
-  min-height: 50vw;
 }
 header, 
 #project-header,
@@ -101,6 +99,7 @@ a:hover {
 }
 header {
   height: 100vh;
+  min-height: 100%;
 }
 .header__bg,
 .project-header__bg, 
@@ -117,6 +116,9 @@ header {
   background-color: var(--blue);
   transform: skewY(6deg);
   transform-origin: top right;
+}
+#projects {
+  min-height: 
 }
 .project-header__bg{
   transform: skewY(-6deg);
@@ -138,7 +140,7 @@ header {
   z-index: -1;
 }
 #project-list {
-  min-height: 100vh;
+  min-height: 100%;
   margin: 5%;
 }
 img {
@@ -189,26 +191,6 @@ h3 {
   box-shadow: 20px 19px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   box-shadow: 0px 20px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.walden {
-  position:relative;
-  -webkit-filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6);filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6)
-}
-.walden:after,.walden:before{
-  content:'';display:block;height:100%;width:100%;top:0;left:0;position:absolute;pointer-events:none
-}
-.walden img{
-  width:100%;z-index:1
-}
-.walden:before{
-  z-index:2
-}
-.walden:after{
-  z-index:3
-}
-.walden::after{
-  background:#04c;mix-blend-mode:screen;opacity:.3
-}
-
 .proj-desc{
   margin: 40px 0;
   width: 70%;
