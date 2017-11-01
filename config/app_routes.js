@@ -16,6 +16,7 @@ const practicebuddy = path.join(__dirname, '../projects/PracticeBuddy/build/inde
 const iframer       = path.join(__dirname, '../projects/Iframer/index.html');
 const gitflow       = path.join(__dirname, '../projects/gitflow/index.html');
 const tpup          = path.join(__dirname, '../projects/Turbo-Pup-Site/index.html');
+const perceptron    = path.join(__dirname, '../projects/perceptron-training/index.html');
 
 module.exports = (app) => {
 
@@ -64,6 +65,11 @@ module.exports = (app) => {
   app.get('/Turbo-Pup-Site', (req, res) => {
     app.use( '/Turbo-Pup-Site', express.static('projects/Turbo-Pup-Site'));
     app.use( '/', express.static('projects/Turbo-Pup-Site'));
+    res.sendFile(tpup);
+  });
+  app.get('/perceptron', (req, res) => {
+    app.use( '/perceptron', express.static('projects/perceptron-training'));
+    app.use( '/', express.static('projects/perceptron-training'));
     res.sendFile(tpup);
   });
 };

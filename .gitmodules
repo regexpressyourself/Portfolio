@@ -1,0 +1,3 @@
+[submodule "projects/perceptron-training"]
+	path = projects/perceptron-training
+	url = https://github.com/regexpressyourself/perceptron-training.git
