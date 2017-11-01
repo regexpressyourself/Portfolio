@@ -70,6 +70,6 @@ module.exports = (app) => {
   app.get('/perceptron', (req, res) => {
     app.use( '/perceptron', express.static('projects/perceptron-training'));
     app.use( '/', express.static('projects/perceptron-training'));
-    res.sendFile(tpup);
+    res.sendFile(perceptron);
   });
 };
