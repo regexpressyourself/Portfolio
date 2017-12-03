@@ -9,6 +9,15 @@ const project_list = [
         background:  "background-color:  #F3EFD7"
     },
     {
+        title:       "Lysten",
+        description: "Lysten is a general-purpose server, implemented using multiplexed I/O with epoll and custom thread pools for concurrency on a multicore system, written in C.",
+        imageSrc:    "images/lysten.png",
+        projectLink: null,
+        githubLink:  "https://github.com/regexpressyourself/Lysten",
+        techList:    ["C", "Thread Pools", "Epoll Units", "Pseudo TTYs"],
+        background:  "background-color:  #FFFAFF"
+    },
+    {
         title:       "Passman",
         description: "Passman is a CLI password management application written in Python for password generation, storage, retrieval, updates, and removal, complete with a MongoDB cloud storage solution using RESTful principles. Available on Pip.",
         imageSrc:    "images/passmanlogo.png",
