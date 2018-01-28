@@ -9,6 +9,15 @@ const project_list = [
         background:  "background-color:  #F3EFD7"
     },
     {
+        title:       "FuzzBot",
+        description: "FuzzBot is a bot created to take online quizzes. It is implemented as a fuzzy expert system, using fuzzy logic to classify and identify test questions. After each attempt, FuzzBot will display a graph detailing its improvement over time.",
+        imageSrc:    "images/fuzzbot.png",
+        projectLink: "https://smessina.com/fuzzbot/",
+        githubLink:  "https://github.com/regexpressyourself/FuzzBot",
+        techList:    ["Python", "Flask", "JavaScript", "ES6", "HTML", "CSS"],
+        background:  "background-color:  #E4E4E4"
+    },
+    {
         title:       "Lysten",
         description: "Lysten is a general-purpose server, implemented using multiplexed I/O with epoll and custom thread pools for concurrency on a multicore system, written in C.",
         imageSrc:    "images/lysten.png",
