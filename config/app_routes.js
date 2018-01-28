@@ -40,12 +40,28 @@ const routes = [
   },
   {
     home: '../projects/PracticeBuddy/build/index.html',
-    route: 'practicebuddy',
+    route: '/practicebuddy',
     statics: [
       { from: '/practicebuddy', 
         to: 'projects/PracticeBuddy/build' },
       { from: '/static', 
         to: 'projects/PracticeBuddy/build/static' }
+    ]
+  },
+  {
+    home: '../projects/seo_pres/index.html',
+    route: '/fagermcgee',
+    statics: [
+      { from: '/fagermcgee', 
+        to: 'projects/seo_pres' },
+      { from: '/lib', 
+        to: 'projects/seo_pres/lib' },
+      { from: '/plugin', 
+        to: 'projects/seo_pres/plugin' },
+      { from: '/css', 
+        to: 'projects/seo_pres/css' },
+      { from: '/js', 
+        to: 'projects/seo_pres/js' }
     ]
   },
   {
@@ -58,12 +74,14 @@ const routes = [
   },
   {
     home: '../projects/gitflow/index.html',
-    route: 'gitflow',
+    route: '/gitflow',
     statics: [
       { from: '/', 
         to: 'projects/gitflow' },
       { from: '/gitflow', 
         to: 'projects/gitflow' },
+      { from: '/images',
+        to: 'public/images' }
     ]
   },
   {
