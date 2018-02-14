@@ -65,6 +65,22 @@ const routes = [
     ]
   },
   {
+    home: '../projects/seo_pres/index.html',
+    route: '/seo',
+    statics: [
+      { from: '/seo', 
+        to: 'projects/seo_pres' },
+      { from: '/lib', 
+        to: 'projects/seo_pres/lib' },
+      { from: '/plugin', 
+        to: 'projects/seo_pres/plugin' },
+      { from: '/css', 
+        to: 'projects/seo_pres/css' },
+      { from: '/js', 
+        to: 'projects/seo_pres/js' }
+    ]
+  },
+  {
     home: '../projects/Iframer/index.html',
     route: 'iframer',
     statics: [
