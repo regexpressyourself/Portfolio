@@ -7,6 +7,7 @@
 
 const path = require('path');
 const express = require('express');
+const request = require("request");
 
 // Primary app routes - all the pages to render directly
 const routes = [
@@ -93,6 +94,14 @@ const routes = [
       { from: '/', 
         to: 'projects/Turbo-Pup-Site' }
     ]
+  },
+  {
+    home: '../projects/twitch-tracker/frontend/index.html',
+    route: '/twitch-tracker',
+    statics: [
+      { from: '/', 
+        to: 'projects/twitch-tracker/frontend' }
+    ]
   }
 ];
 
@@ -106,5 +115,18 @@ module.exports = (app) => {
     });
 
   }
+
+  // request block for my twitch viewer tracker
+  app.get('/get_viewers', (req, res) => {
+    let username = "sscait"
+    if (req.query && req.query["username"].length > 0) {
+        username = req.query["username"]
+    }
+    response = request.get("https://tmi.twitch.tv/group/user/"+username+"/chatters", (er, resp, bod) => {
+      let result = JSON.parse(bod);
+      res.send(result);
+    });
+  });
+
 };
 
