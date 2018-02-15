@@ -96,11 +96,11 @@ const routes = [
     ]
   },
   {
-    home: '../projects/twitch-tracker/frontend/index.html',
+    home: '../projects/twitch-tracker/index.html',
     route: '/twitch-tracker',
     statics: [
       { from: '/', 
-        to: 'projects/twitch-tracker/frontend' }
+        to: 'projects/twitch-tracker' }
     ]
   }
 ];
