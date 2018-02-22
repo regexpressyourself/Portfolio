@@ -116,13 +116,15 @@ module.exports = (app) => {
 
   }
 
+try {
   // request block for my twitch viewer tracker
   app.get('/get_viewers', (req, res) => {
     let username = "sscait"
-    if (req.query && req.query["username"].length > 0) {
+    if (req.query && req.query["username"] && req.query["username"].length > 0) {
         username = req.query["username"]
     }
     response = request.get("https://tmi.twitch.tv/group/user/"+username+"/chatters", (er, resp, bod) => {
+	if (er || !bod) {return;}
       let result;
       try {
         result = JSON.parse(bod);
@@ -133,6 +135,9 @@ module.exports = (app) => {
       res.send(result);
     });
   });
+}
+catch(er) {
+};
 
 };
 
