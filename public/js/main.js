@@ -139,14 +139,17 @@ let get_links= (live, gh, title) => {
     return link_html;
 }
 
-let get_text_div = (current_proj) => {
+let get_text_div = (current_proj, project_num) => {
     link_text = get_links(current_proj.projectLink, 
         current_proj.githubLink, 
         current_proj.title);
     return `
         <div class='project-text-container'>
             ${get_tech(current_proj.techList)}
-            <h3>${current_proj.title}</h3>
+            <h3>
+            <span class='header-${project_num % 4}'>${current_proj.title[0]}${current_proj.title.substring(1)}
+            </span>
+            </h3>
             <p class='proj-desc'>${current_proj.description}</p>
             ${link_text}
         </div>
@@ -172,7 +175,7 @@ let get_img_div= (current_proj) => {
 
 let get_project_html = (current_proj, project_num) =>
 {
-    let text_div     = get_text_div(current_proj);
+    let text_div     = get_text_div(current_proj, project_num);
     let img_div      = get_img_div(current_proj);
     let inner_html;
 

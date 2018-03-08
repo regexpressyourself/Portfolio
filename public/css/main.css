@@ -6,6 +6,10 @@
   font-family: 'GilroyLight';
   src: url("../fonts/Gilroy-Light.otf") format("opentype");
 }
+@font-face {
+  font-family: 'Londrina';
+  src: url("../fonts/LondrinaShadow-Regular.ttf") format("truetype");
+}
 body {
   background-color: #FAFAFA;
   color: #444242;
@@ -160,6 +164,27 @@ h3 {
   font-size: 6vw;
   font-family: "GilroyBold", Arial, sans-serif;
   margin: 0 0 2% 0;
+}
+.header-0,
+.header-1,
+.header-2,
+.header-3 {
+  font-family: "Londrina", Arial, sans-serif;
+  font-size: 150%;
+  margin-right: -25px;
+
+}
+.header-0{
+  color: #DC6FE8;
+}
+.header-1{
+  color: #D98647;
+}
+.header-2{
+  color: #FFDE0D;
+}
+.header-3{
+  color: #47D9AD;
 }
 .project-tech {
   font-size: 2.5vw;
