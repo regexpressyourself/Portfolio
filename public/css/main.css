@@ -17,10 +17,6 @@ body {
   min-height: 1000px;
 }
 
-h1, h2 {
-  font-family: 'GilroyBold', Arial, sans-serif;
-  font-weight: 400;
-}
 h2 + span{
   font-family: 'GilroyLight', Arial, sans-serif;
   font-weight: 200;
@@ -34,25 +30,29 @@ h2 + span{
 #messina {
   margin-left: 12%;
 }
+#logo {
+  font-family: "Londrina", sans-serif;
+  font-size: 50vw;
+  line-height: 1;
+  margin: 0;
+}
+#logo-subtext {
+  font-family: "Inconsolata", monospace;
+  line-height: initial;
+  margin: -6vw 0 0 0;
+  font-size: 7vw;
+  font-weight: 800;
+}
+#logo-container {
+  width: 50vw;
+}
 h1 {
-  line-height: 75%;
-  padding: 5% 3%;
+  font-weight: 400;
   position: relative;
   color: white;
-  margin: 0;
-  font-size: 14vw;
-}
-h2 {
-  font-size: 8vw;
-  margin: 0;
-}
-#tagline {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3vw;
-  padding: 5% 3%;
-  position: absolute;
-  color: white;
-  bottom: 10%;
+  margin: -3vw 0 0 0;
+  padding: 0;
+  text-align: center;
 }
 header, 
 #project-header,
@@ -100,6 +100,7 @@ a:hover {
 header {
   height: 100vh;
   max-height: 1080px;
+  min-height: 60vw;
 }
 .header__bg,
 .project-header__bg, 
@@ -238,13 +239,19 @@ footer > p {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
-  h1 {
-    margin-top: 20vh;
-    font-size: 16vw;
+@media only screen and (max-width: 600px) {
+
+  #logo {
+    font-size: 85vw;
   }
-  #tagline {
-    font-size: 6vw;
+  #logo-subtext {
+    font-size: 13vw;
+  }
+  #logo-container {
+    width: 100vw;
+  }
+  h1 {
+    margin-top: 10vw;
   }
 
   .project-image-container {
@@ -291,13 +298,17 @@ footer > p {
 
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 12vw;
+    margin-top: 0;
+  }
+  #logo {
+    font-size: 35vw;
+  }
+  #logo-subtext {
+    font-size: 4vw;
+    margin-top: -4vw;
   }
   h3 {
     font-size: 6vw;
-  }
-  #tagline {
-    right: 20px;
   }
 }
 
