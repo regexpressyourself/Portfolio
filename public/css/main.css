@@ -16,7 +16,11 @@ body {
   margin: 0;
   min-height: 1000px;
 }
-
+h2 { 
+  font-family: 'GilroyBold', Arial, sans-serif; 
+  font-weight: 400; 
+  font-size: 8vw;
+} 
 h2 + span{
   font-family: 'GilroyLight', Arial, sans-serif;
   font-weight: 200;
@@ -34,13 +38,12 @@ h2 + span{
   font-family: "Londrina", sans-serif;
   font-size: 50vw;
   line-height: 1;
-  margin: 0;
 }
 #logo-subtext {
   font-family: "Inconsolata", monospace;
   line-height: initial;
   margin: -6vw 0 0 0;
-  font-size: 7vw;
+  font-size: 8vw;
   font-weight: 800;
 }
 #logo-container {
@@ -50,7 +53,7 @@ h1 {
   font-weight: 400;
   position: relative;
   color: white;
-  margin: -3vw 0 0 0;
+  margin: -3vw 0 0 20px;
   padding: 0;
   text-align: center;
 }
@@ -248,7 +251,7 @@ footer > p {
     font-size: 13vw;
   }
   #logo-container {
-    width: 100vw;
+    width: 95vw;
   }
   h1 {
     margin-top: 10vw;
@@ -301,10 +304,10 @@ footer > p {
     margin-top: 0;
   }
   #logo {
-    font-size: 35vw;
+    font-size: 40vw;
   }
   #logo-subtext {
-    font-size: 4vw;
+    font-size: 6vw;
     margin-top: -4vw;
   }
   h3 {
