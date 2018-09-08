@@ -200,6 +200,7 @@ let get_project_html = (current_proj, project_num) =>
             `;
     }
   let logo_color = ["#47D9Ad", "#DC6FE8", "#FFDE0D", "#D98647"][Math.floor(Math.random() * 4)];
+  console.log(logo_color);
     document.getElementById("logo").style.color = logo_color;
     document.getElementById("project-list").innerHTML = project_html;
     document.getElementById("cr-date").innerHTML = new Date().getFullYear();
